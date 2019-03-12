@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.suneee.ep.trade.dao.PXianshiGoodsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.suneee.ep.trade.model.PXianshiGoods">
+        <id column="xianshi_goods_id" property="xianshiGoodsId" />
+        <result column="xianshi_id" property="xianshiId" />
+        <result column="xianshi_name" property="xianshiName" />
+        <result column="xianshi_title" property="xianshiTitle" />
+        <result column="xianshi_explain" property="xianshiExplain" />
+        <result column="goods_id" property="goodsId" />
+        <result column="store_id" property="storeId" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_price" property="goodsPrice" />
+        <result column="xianshi_price" property="xianshiPrice" />
+        <result column="goods_image" property="goodsImage" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="lower_limit" property="lowerLimit" />
+        <result column="state" property="state" />
+        <result column="xianshi_recommend" property="xianshiRecommend" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        xianshi_goods_id, xianshi_id, xianshi_name, xianshi_title, xianshi_explain, goods_id, store_id, goods_name, goods_price, xianshi_price, goods_image, start_time, end_time, lower_limit, state, xianshi_recommend
+    </sql>
+
+</mapper>

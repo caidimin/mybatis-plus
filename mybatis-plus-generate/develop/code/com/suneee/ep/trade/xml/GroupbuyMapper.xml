@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.suneee.ep.trade.dao.GroupbuyDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.suneee.ep.trade.model.Groupbuy">
+        <id column="groupbuy_id" property="groupbuyId" />
+        <result column="groupbuy_name" property="groupbuyName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="goods_id" property="goodsId" />
+        <result column="goods_commonid" property="goodsCommonid" />
+        <result column="goods_name" property="goodsName" />
+        <result column="store_id" property="storeId" />
+        <result column="store_name" property="storeName" />
+        <result column="goods_price" property="goodsPrice" />
+        <result column="groupbuy_price" property="groupbuyPrice" />
+        <result column="groupbuy_rebate" property="groupbuyRebate" />
+        <result column="virtual_quantity" property="virtualQuantity" />
+        <result column="upper_limit" property="upperLimit" />
+        <result column="buyer_count" property="buyerCount" />
+        <result column="buy_quantity" property="buyQuantity" />
+        <result column="groupbuy_intro" property="groupbuyIntro" />
+        <result column="state" property="state" />
+        <result column="recommended" property="recommended" />
+        <result column="views" property="views" />
+        <result column="class_id" property="classId" />
+        <result column="s_class_id" property="sClassId" />
+        <result column="groupbuy_image" property="groupbuyImage" />
+        <result column="groupbuy_image1" property="groupbuyImage1" />
+        <result column="remark" property="remark" />
+        <result column="is_vr" property="isVr" />
+        <result column="vr_city_id" property="vrCityId" />
+        <result column="vr_area_id" property="vrAreaId" />
+        <result column="vr_mall_id" property="vrMallId" />
+        <result column="vr_class_id" property="vrClassId" />
+        <result column="vr_s_class_id" property="vrSClassId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        groupbuy_id, groupbuy_name, start_time, end_time, goods_id, goods_commonid, goods_name, store_id, store_name, goods_price, groupbuy_price, groupbuy_rebate, virtual_quantity, upper_limit, buyer_count, buy_quantity, groupbuy_intro, state, recommended, views, class_id, s_class_id, groupbuy_image, groupbuy_image1, remark, is_vr, vr_city_id, vr_area_id, vr_mall_id, vr_class_id, vr_s_class_id
+    </sql>
+
+</mapper>

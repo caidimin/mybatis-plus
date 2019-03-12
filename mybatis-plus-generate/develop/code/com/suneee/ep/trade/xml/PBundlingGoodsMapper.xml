@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.suneee.ep.trade.dao.PBundlingGoodsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.suneee.ep.trade.model.PBundlingGoods">
+        <id column="bl_goods_id" property="blGoodsId" />
+        <result column="bl_id" property="blId" />
+        <result column="goods_id" property="goodsId" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_image" property="goodsImage" />
+        <result column="bl_goods_price" property="blGoodsPrice" />
+        <result column="bl_appoint" property="blAppoint" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        bl_goods_id, bl_id, goods_id, goods_name, goods_image, bl_goods_price, bl_appoint
+    </sql>
+
+</mapper>
