@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
  * 组合销售活动表 前端控制器
  * </p>
  *
- * @author Yanghu
+ * @author Yangbo
  * @since 2019-03-15
  * @Version V1.0
  * @Copyright: www.weilian.com Inc. All rights reserved.

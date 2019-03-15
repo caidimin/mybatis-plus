@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 商品赠品表 Mapper 接口
  * </p>
  *
- * @author Yanghu
+ * @author Yangbo
  * @since 2019-03-15
  * @Version V1.0
  * @Copyright: www.weilian.com Inc. All rights reserved.

@@ -13,7 +13,7 @@ import java.io.Serializable;
  * 团购商品表
  * </p>
  *
- * @author Yanghu
+ * @author Yangbo
  * @since 2019-03-15
  * @Version V1.0
  * @Copyright: www.weilian.com Inc. All rights reserved.

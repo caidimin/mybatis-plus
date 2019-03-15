@@ -70,7 +70,7 @@ public class MysqlGenerator extends GeneratorTest {
                 .setBaseResultMap(true)// XML ResultMap
                 .setBaseColumnList(true)// XML columList
                 //.setKotlin(true) 是否生成 kotlin 代码
-                .setAuthor("Yanghu")
+                .setAuthor("Yangbo")
             // 自定义文件命名，注意 %s 会自动填充表实体属性！
             // .setMapperName("%sDao")
             // .setXmlName("%sDao")

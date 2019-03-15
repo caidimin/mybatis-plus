@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 组合销售活动表 服务类
  * </p>
  *
- * @author Yanghu
+ * @author Yangbo
  * @since 2019-03-15
  * @Version V1.0
  * @Copyright: www.suneee.com Inc. All rights reserved.
