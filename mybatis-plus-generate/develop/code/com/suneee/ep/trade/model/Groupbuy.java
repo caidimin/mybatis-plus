@@ -14,9 +14,9 @@ import java.io.Serializable;
  * </p>
  *
  * @author Yanghu
- * @since 2019-03-12
+ * @since 2019-03-15
  * @Version V1.0
- * @Copyright: www.suneee.com Inc. All rights reserved.
+ * @Copyright: www.weilian.com Inc. All rights reserved.
  * 注意：本内容仅限于深圳象翌微链集团内部传阅，禁止外泄以及用于其他的商业目
  */
 @TableName("suneee_groupbuy")
@@ -29,153 +29,182 @@ public class Groupbuy extends Model<Groupbuy> {
      */
     @TableId(value = "groupbuy_id", type = IdType.AUTO)
     private Integer groupbuyId;
+
     /**
      * 活动名称
      */
     @TableField("groupbuy_name")
     private String groupbuyName;
+
     /**
      * 开始时间
      */
     @TableField("start_time")
     private Integer startTime;
+
     /**
      * 结束时间
      */
     @TableField("end_time")
     private Integer endTime;
+
     /**
      * 商品ID
      */
     @TableField("goods_id")
     private Integer goodsId;
+
     /**
      * 商品公共表ID
      */
     @TableField("goods_commonid")
     private Integer goodsCommonid;
+
     /**
      * 商品名称
      */
     @TableField("goods_name")
     private String goodsName;
+
     /**
      * 店铺ID
      */
     @TableField("store_id")
     private Integer storeId;
+
     /**
      * 店铺名称
      */
     @TableField("store_name")
     private String storeName;
+
     /**
      * 商品原价
      */
     @TableField("goods_price")
     private BigDecimal goodsPrice;
+
     /**
      * 团购价格
      */
     @TableField("groupbuy_price")
     private BigDecimal groupbuyPrice;
+
     /**
      * 折扣
      */
     @TableField("groupbuy_rebate")
     private BigDecimal groupbuyRebate;
+
     /**
      * 虚拟购买数量
      */
     @TableField("virtual_quantity")
     private Integer virtualQuantity;
+
     /**
      * 购买上限
      */
     @TableField("upper_limit")
     private Integer upperLimit;
+
     /**
      * 已购买人数
      */
     @TableField("buyer_count")
     private Integer buyerCount;
+
     /**
      * 购买数量
      */
     @TableField("buy_quantity")
     private Integer buyQuantity;
+
     /**
      * 本团介绍
      */
     @TableField("groupbuy_intro")
     private String groupbuyIntro;
+
     /**
      * 团购状态 10-审核中 20-正常 30-审核失败 31-管理员关闭 32-已结束
      */
     private Integer state;
+
     /**
      * 是否推荐 0.未推荐 1.已推荐
      */
     private Integer recommended;
+
     /**
      * 查看次数
      */
     private Integer views;
+
     /**
      * 团购类别编号
      */
     @TableField("class_id")
     private Integer classId;
+
     /**
      * 团购2级分类id
      */
     @TableField("s_class_id")
     private Integer sClassId;
+
     /**
      * 团购图片
      */
     @TableField("groupbuy_image")
     private String groupbuyImage;
+
     /**
      * 团购图片1
      */
     @TableField("groupbuy_image1")
     private String groupbuyImage1;
+
     /**
      * 备注
      */
     private String remark;
+
     /**
      * 是否虚拟团购 1是0否
      */
     @TableField("is_vr")
     private Integer isVr;
+
     /**
      * 虚拟团购城市id
      */
     @TableField("vr_city_id")
     private Integer vrCityId;
+
     /**
      * 虚拟团购区域id
      */
     @TableField("vr_area_id")
     private Integer vrAreaId;
+
     /**
      * 虚拟团购商区id
      */
     @TableField("vr_mall_id")
     private Integer vrMallId;
+
     /**
      * 虚拟团购大分类id
      */
     @TableField("vr_class_id")
     private Integer vrClassId;
+
     /**
      * 虚拟团购小分类id
      */
     @TableField("vr_s_class_id")
     private Integer vrSClassId;
-
 
     public Integer getGroupbuyId() {
         return groupbuyId;
@@ -184,7 +213,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyId(Integer groupbuyId) {
         this.groupbuyId = groupbuyId;
     }
-
     public String getGroupbuyName() {
         return groupbuyName;
     }
@@ -192,7 +220,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyName(String groupbuyName) {
         this.groupbuyName = groupbuyName;
     }
-
     public Integer getStartTime() {
         return startTime;
     }
@@ -200,7 +227,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setStartTime(Integer startTime) {
         this.startTime = startTime;
     }
-
     public Integer getEndTime() {
         return endTime;
     }
@@ -208,7 +234,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setEndTime(Integer endTime) {
         this.endTime = endTime;
     }
-
     public Integer getGoodsId() {
         return goodsId;
     }
@@ -216,7 +241,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGoodsId(Integer goodsId) {
         this.goodsId = goodsId;
     }
-
     public Integer getGoodsCommonid() {
         return goodsCommonid;
     }
@@ -224,7 +248,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGoodsCommonid(Integer goodsCommonid) {
         this.goodsCommonid = goodsCommonid;
     }
-
     public String getGoodsName() {
         return goodsName;
     }
@@ -232,7 +255,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
-
     public Integer getStoreId() {
         return storeId;
     }
@@ -240,7 +262,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setStoreId(Integer storeId) {
         this.storeId = storeId;
     }
-
     public String getStoreName() {
         return storeName;
     }
@@ -248,7 +269,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
-
     public BigDecimal getGoodsPrice() {
         return goodsPrice;
     }
@@ -256,7 +276,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGoodsPrice(BigDecimal goodsPrice) {
         this.goodsPrice = goodsPrice;
     }
-
     public BigDecimal getGroupbuyPrice() {
         return groupbuyPrice;
     }
@@ -264,7 +283,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyPrice(BigDecimal groupbuyPrice) {
         this.groupbuyPrice = groupbuyPrice;
     }
-
     public BigDecimal getGroupbuyRebate() {
         return groupbuyRebate;
     }
@@ -272,7 +290,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyRebate(BigDecimal groupbuyRebate) {
         this.groupbuyRebate = groupbuyRebate;
     }
-
     public Integer getVirtualQuantity() {
         return virtualQuantity;
     }
@@ -280,7 +297,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setVirtualQuantity(Integer virtualQuantity) {
         this.virtualQuantity = virtualQuantity;
     }
-
     public Integer getUpperLimit() {
         return upperLimit;
     }
@@ -288,7 +304,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setUpperLimit(Integer upperLimit) {
         this.upperLimit = upperLimit;
     }
-
     public Integer getBuyerCount() {
         return buyerCount;
     }
@@ -296,7 +311,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setBuyerCount(Integer buyerCount) {
         this.buyerCount = buyerCount;
     }
-
     public Integer getBuyQuantity() {
         return buyQuantity;
     }
@@ -304,7 +318,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setBuyQuantity(Integer buyQuantity) {
         this.buyQuantity = buyQuantity;
     }
-
     public String getGroupbuyIntro() {
         return groupbuyIntro;
     }
@@ -312,7 +325,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyIntro(String groupbuyIntro) {
         this.groupbuyIntro = groupbuyIntro;
     }
-
     public Integer getState() {
         return state;
     }
@@ -320,7 +332,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setState(Integer state) {
         this.state = state;
     }
-
     public Integer getRecommended() {
         return recommended;
     }
@@ -328,7 +339,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setRecommended(Integer recommended) {
         this.recommended = recommended;
     }
-
     public Integer getViews() {
         return views;
     }
@@ -336,7 +346,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setViews(Integer views) {
         this.views = views;
     }
-
     public Integer getClassId() {
         return classId;
     }
@@ -344,7 +353,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setClassId(Integer classId) {
         this.classId = classId;
     }
-
     public Integer getsClassId() {
         return sClassId;
     }
@@ -352,7 +360,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setsClassId(Integer sClassId) {
         this.sClassId = sClassId;
     }
-
     public String getGroupbuyImage() {
         return groupbuyImage;
     }
@@ -360,7 +367,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyImage(String groupbuyImage) {
         this.groupbuyImage = groupbuyImage;
     }
-
     public String getGroupbuyImage1() {
         return groupbuyImage1;
     }
@@ -368,7 +374,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setGroupbuyImage1(String groupbuyImage1) {
         this.groupbuyImage1 = groupbuyImage1;
     }
-
     public String getRemark() {
         return remark;
     }
@@ -376,7 +381,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setRemark(String remark) {
         this.remark = remark;
     }
-
     public Integer getIsVr() {
         return isVr;
     }
@@ -384,7 +388,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setIsVr(Integer isVr) {
         this.isVr = isVr;
     }
-
     public Integer getVrCityId() {
         return vrCityId;
     }
@@ -392,7 +395,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setVrCityId(Integer vrCityId) {
         this.vrCityId = vrCityId;
     }
-
     public Integer getVrAreaId() {
         return vrAreaId;
     }
@@ -400,7 +402,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setVrAreaId(Integer vrAreaId) {
         this.vrAreaId = vrAreaId;
     }
-
     public Integer getVrMallId() {
         return vrMallId;
     }
@@ -408,7 +409,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setVrMallId(Integer vrMallId) {
         this.vrMallId = vrMallId;
     }
-
     public Integer getVrClassId() {
         return vrClassId;
     }
@@ -416,7 +416,6 @@ public class Groupbuy extends Model<Groupbuy> {
     public void setVrClassId(Integer vrClassId) {
         this.vrClassId = vrClassId;
     }
-
     public Integer getVrSClassId() {
         return vrSClassId;
     }
@@ -433,7 +432,7 @@ public class Groupbuy extends Model<Groupbuy> {
     @Override
     public String toString() {
         return "Groupbuy{" +
-        ", groupbuyId=" + groupbuyId +
+        "groupbuyId=" + groupbuyId +
         ", groupbuyName=" + groupbuyName +
         ", startTime=" + startTime +
         ", endTime=" + endTime +

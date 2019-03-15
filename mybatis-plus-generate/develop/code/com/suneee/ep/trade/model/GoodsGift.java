@@ -13,9 +13,9 @@ import java.io.Serializable;
  * </p>
  *
  * @author Yanghu
- * @since 2019-03-12
+ * @since 2019-03-15
  * @Version V1.0
- * @Copyright: www.suneee.com Inc. All rights reserved.
+ * @Copyright: www.weilian.com Inc. All rights reserved.
  * 注意：本内容仅限于深圳象翌微链集团内部传阅，禁止外泄以及用于其他的商业目
  */
 @TableName("suneee_goods_gift")
@@ -28,37 +28,42 @@ public class GoodsGift extends Model<GoodsGift> {
      */
     @TableId(value = "gift_id", type = IdType.AUTO)
     private Integer giftId;
+
     /**
      * 主商品id
      */
     @TableField("goods_id")
     private Integer goodsId;
+
     /**
      * 主商品公共id
      */
     @TableField("goods_commonid")
     private Integer goodsCommonid;
+
     /**
      * 赠品商品id 
      */
     @TableField("gift_goodsid")
     private Integer giftGoodsid;
+
     /**
      * 主商品名称
      */
     @TableField("gift_goodsname")
     private String giftGoodsname;
+
     /**
      * 主商品图片
      */
     @TableField("gift_goodsimage")
     private String giftGoodsimage;
+
     /**
      * 赠品数量
      */
     @TableField("gift_amount")
     private Integer giftAmount;
-
 
     public Integer getGiftId() {
         return giftId;
@@ -67,7 +72,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGiftId(Integer giftId) {
         this.giftId = giftId;
     }
-
     public Integer getGoodsId() {
         return goodsId;
     }
@@ -75,7 +79,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGoodsId(Integer goodsId) {
         this.goodsId = goodsId;
     }
-
     public Integer getGoodsCommonid() {
         return goodsCommonid;
     }
@@ -83,7 +86,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGoodsCommonid(Integer goodsCommonid) {
         this.goodsCommonid = goodsCommonid;
     }
-
     public Integer getGiftGoodsid() {
         return giftGoodsid;
     }
@@ -91,7 +93,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGiftGoodsid(Integer giftGoodsid) {
         this.giftGoodsid = giftGoodsid;
     }
-
     public String getGiftGoodsname() {
         return giftGoodsname;
     }
@@ -99,7 +100,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGiftGoodsname(String giftGoodsname) {
         this.giftGoodsname = giftGoodsname;
     }
-
     public String getGiftGoodsimage() {
         return giftGoodsimage;
     }
@@ -107,7 +107,6 @@ public class GoodsGift extends Model<GoodsGift> {
     public void setGiftGoodsimage(String giftGoodsimage) {
         this.giftGoodsimage = giftGoodsimage;
     }
-
     public Integer getGiftAmount() {
         return giftAmount;
     }
@@ -124,7 +123,7 @@ public class GoodsGift extends Model<GoodsGift> {
     @Override
     public String toString() {
         return "GoodsGift{" +
-        ", giftId=" + giftId +
+        "giftId=" + giftId +
         ", goodsId=" + goodsId +
         ", goodsCommonid=" + goodsCommonid +
         ", giftGoodsid=" + giftGoodsid +
